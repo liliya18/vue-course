@@ -6,14 +6,19 @@
   "author": "Liliya Mannapova <liliya.mf.18@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn build && node stubs/index.js",
+    "start": "nodemon ./stubs",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
   "dependencies": {
+    "2gis-maps": "^3.5.15",
     "@babel/polyfill": "^7.8.3",
     "axios": "^0.19.2",
+    "mapbox-gl": "^1.8.1",
+    "travelpayouts": "^0.4.0",
     "vue": "^2.6.11",
+    "vue-mapbox": "^0.4.1",
+    "vue-router": "^3.1.5",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -23,13 +28,21 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
+    "element-ui": "^2.13.0",
     "express": "^4.17.1",
     "file-loader": "^5.1.0",
+    "ip": "^1.1.5",
+    "nodemon": "^2.0.2",
     "vue-loader": "^15.9.0",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
   },
-  "browserslist": "> 0.25%, not dead"
+  "browserslist": [
+    "> 0.25%",
+    "not dead"
+  ]
 }

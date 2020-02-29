@@ -1,0 +1,11 @@
+export const GET_PLACES = 'GET_PLACES';
+
+export const GET_DIRECTIONS = 'GET_DIRECTIONS';
+
+export const GET_CITIES = 'GET_CITIES';
+
+export const GET_COUNTRIES = 'GET_COUNTRIES';
+
+export const GET_MAP_COORDINATES = 'GET_MAP_COORDINATES';
+
+export const SET_FORM_DATA = 'SET_FORM_DATA';
