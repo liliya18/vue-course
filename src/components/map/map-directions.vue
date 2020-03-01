@@ -31,6 +31,11 @@
         mounted() {
             this.initMap();
         },
+        watch: {
+            mapDirections() {
+                this.removeMapMarkers();
+            },
+        },
         computed: {
             mapDirections() {
                 return this.$store.getters.mapDirections;
@@ -44,7 +49,7 @@
                 return direction.map(city => city.name).join(', ');
             },
             handleSelectCountry(cities) {
-                this.markers.eachLayer(n => this.markers.removeLayer(n));
+                this.removeMapMarkers();
 
                 const city = cities[0];
                 this.map.setView([city.coordinates[1], city.coordinates[0]]);
@@ -68,6 +73,9 @@
 
                 this.markers = DG.featureGroup();
                 this.markers.addTo(this.map);
+            },
+            removeMapMarkers() {
+                this.markers.eachLayer(n => this.markers.removeLayer(n));
             },
         },
     }
