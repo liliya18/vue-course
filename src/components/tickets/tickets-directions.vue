@@ -12,7 +12,7 @@
                         <span class="ticket__time">{{ timeFormatter(ticket.departure_at) }}</span>
                         <span class="ticket__date">{{ dateFormatter(ticket.departure_at) }}</span>
                     </span>
-                    <img :src="travelSrc" alt="Путь">
+                    <img src="assets/travel.svg" alt="Путь">
                     <span class="ticket__info-item">
                         <span class="ticket__title">
                             {{ formData.destinationCode }}
@@ -41,8 +41,6 @@
 
     import logoApi from '../../__data__/actions/get-static-data';
 
-    import travelSrc from '../../assets/travel.svg';
-
     export default {
         name: 'tickets-directions',
         props: {
@@ -55,9 +53,6 @@
                 required: true,
             },
         },
-        data: () => ({
-            travelSrc,
-        }),
         computed: {
             ...mapState(['formData']),
             cheap() {

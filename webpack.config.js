@@ -69,6 +69,10 @@ module.exports = {
                 from: 'node_modules/@babel/polyfill/dist/polyfill.min.js',
                 to: 'extLib/polyfill.min.js'
             },
+            {
+                from: 'src/assets',
+                to: 'assets'
+            }
         ])
     ],
     externals: {

@@ -2,7 +2,7 @@
     <el-container>
         <el-header class="header">
             <div class="header__logo">
-                <img :src="logoSrc" alt="Travel">
+                <img src="assets/logo.svg" alt="Travel">
             </div>
             <div class="header__links">
                 <div>
@@ -19,13 +19,8 @@
 </template>
 
 <script>
-    import logoSrc from './assets/logo.svg';
-
     export default {
         name: 'app',
-        data: () => ({
-            logoSrc,
-        }),
     }
 </script>
 
@@ -37,23 +32,6 @@
 
     body * {
         box-sizing: border-box;
-    }
-
-    /* todo: убрать */
-    .el-carousel__item h3 {
-        color: #475669;
-        font-size: 14px;
-        opacity: 0.75;
-        line-height: 150px;
-        margin: 0;
-    }
-
-    .el-carousel__item:nth-child(2n) {
-        background-color: #99a9bf;
-    }
-
-    .el-carousel__item:nth-child(2n+1) {
-        background-color: #d3dce6;
     }
 </style>
 

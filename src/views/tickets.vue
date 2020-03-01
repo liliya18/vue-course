@@ -2,8 +2,14 @@
     <div class="tickets">
         <div class="tickets__services services">
             <el-carousel class="services__carousel" height="400px" trigger="click">
-                <el-carousel-item v-for="img in carousel">
-                    <img class="services__carousel-img" :src="img.src" :alt="img.alt">
+                <el-carousel-item>
+                    <img class="services__carousel-img" src="assets/carousel/1.jpeg" alt="Самолет">
+                </el-carousel-item>
+                <el-carousel-item>
+                    <img class="services__carousel-img" src="assets/carousel/2.jpg" alt="Озеро">
+                </el-carousel-item>
+                <el-carousel-item>
+                    <img class="services__carousel-img" src="assets/carousel/3.jpg" alt="Горы">
                 </el-carousel-item>
             </el-carousel>
             <tickets-form class="services__filter"/>
@@ -24,24 +30,12 @@
     import TicketsForm from '../components/tickets/tickets-form';
     import TicketsDirections from '../components/tickets/tickets-directions';
 
-    // @TODO
-    import img1 from '../assets/carousel/1.jpeg';
-    import img2 from '../assets/carousel/2.jpg';
-    import img3 from '../assets/carousel/3.jpg';
-
     export default {
         name: 'tickets',
         components: {
             TicketsForm,
             TicketsDirections,
         },
-        data: () => ({
-            carousel: [
-                {src: img1, alt: 'Самолет'},
-                {src: img2, alt: 'Озеро'},
-                {src: img3, alt: 'Горы'},
-            ],
-        }),
         mounted() {
             this.$store.dispatch('getCities');
         },
