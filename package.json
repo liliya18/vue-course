@@ -14,10 +14,8 @@
     "2gis-maps": "^3.5.15",
     "@babel/polyfill": "^7.8.3",
     "axios": "^0.19.2",
-    "mapbox-gl": "^1.8.1",
     "travelpayouts": "^0.4.0",
     "vue": "^2.6.11",
-    "vue-mapbox": "^0.4.1",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2"
   },
@@ -31,7 +29,6 @@
     "element-ui": "^2.13.0",
     "express": "^4.17.1",
     "file-loader": "^5.1.0",
-    "ip": "^1.1.5",
     "nodemon": "^2.0.2",
     "vue-loader": "^15.9.0",
     "vue-style-loader": "^4.1.2",
