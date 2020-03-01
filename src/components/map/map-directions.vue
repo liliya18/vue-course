@@ -20,12 +20,13 @@
 </template>
 
 <script>
-    const DG = require('2gis-maps');
+    import DG from '2gis-maps';
 
     export default {
         name: 'map-directions',
         data: () => ({
             map: null,
+            markers: null,
         }),
         mounted() {
             this.initMap();
