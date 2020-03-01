@@ -125,6 +125,4 @@ app.get(['/countries'], async (request, response) => {
     }
 });
 
-
-
-    module.exports = app;
+module.exports = app;

@@ -50,8 +50,4 @@
         margin: 0;
         list-style: none;
     }
-
-    .carousel__img {
-        width: 100%;
-    }
 </style>

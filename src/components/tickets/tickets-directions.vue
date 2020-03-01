@@ -1,6 +1,6 @@
 <template>
     <el-row :gutter="24">
-        <el-col :span="8" v-for="ticket in direction">
+        <el-col :span="8" v-for="(ticket, index) in direction" :key="`ticket-${index}`">
             <el-card class="ticket">
                 <div class="ticket__info">
                      <span class="ticket__info-item">
